@@ -16,7 +16,7 @@ namespace PART_6___PSR_PROJECT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmRPS());
         }
     }
 }
