@@ -121,6 +121,9 @@
   <data name="paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\181-1815919_funny-question-mark-clipart-2-by-paula-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

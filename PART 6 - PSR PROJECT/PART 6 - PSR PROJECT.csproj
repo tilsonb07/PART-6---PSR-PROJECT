@@ -89,5 +89,11 @@
   <ItemGroup>
     <None Include="Resources\sciccors.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ques.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\181-1815919_funny-question-mark-clipart-2-by-paula-clipart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

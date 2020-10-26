@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.grpPlayerChoice = new System.Windows.Forms.GroupBox();
-            this.lblInstructions = new System.Windows.Forms.Label();
-            this.radPaper = new System.Windows.Forms.RadioButton();
-            this.radSciccors = new System.Windows.Forms.RadioButton();
             this.radRock = new System.Windows.Forms.RadioButton();
+            this.radSciccors = new System.Windows.Forms.RadioButton();
+            this.radPaper = new System.Windows.Forms.RadioButton();
+            this.lblInstructions = new System.Windows.Forms.Label();
             this.lblChoice = new System.Windows.Forms.Label();
             this.imgPlayer = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblVS = new System.Windows.Forms.Label();
             this.lblPCChoice = new System.Windows.Forms.Label();
             this.imgPC = new System.Windows.Forms.PictureBox();
+            this.btnPlayAgain = new System.Windows.Forms.Button();
             this.grpPlayerChoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPC)).BeginInit();
@@ -55,40 +56,7 @@
             this.grpPlayerChoice.TabIndex = 0;
             this.grpPlayerChoice.TabStop = false;
             this.grpPlayerChoice.Text = "Players Choice";
-            this.grpPlayerChoice.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // lblInstructions
-            // 
-            this.lblInstructions.AutoSize = true;
-            this.lblInstructions.Location = new System.Drawing.Point(12, 9);
-            this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(126, 13);
-            this.lblInstructions.TabIndex = 1;
-            this.lblInstructions.Text = "Please Make A Selection";
-            // 
-            // radPaper
-            // 
-            this.radPaper.AutoSize = true;
-            this.radPaper.Location = new System.Drawing.Point(6, 69);
-            this.radPaper.Name = "radPaper";
-            this.radPaper.Size = new System.Drawing.Size(53, 17);
-            this.radPaper.TabIndex = 0;
-            this.radPaper.TabStop = true;
-            this.radPaper.Text = "Paper";
-            this.radPaper.UseVisualStyleBackColor = true;
-            this.radPaper.CheckedChanged += new System.EventHandler(this.radPaper_CheckedChanged);
-            // 
-            // radSciccors
-            // 
-            this.radSciccors.AutoSize = true;
-            this.radSciccors.Location = new System.Drawing.Point(6, 114);
-            this.radSciccors.Name = "radSciccors";
-            this.radSciccors.Size = new System.Drawing.Size(66, 17);
-            this.radSciccors.TabIndex = 1;
-            this.radSciccors.TabStop = true;
-            this.radSciccors.Text = "Sciccors";
-            this.radSciccors.UseVisualStyleBackColor = true;
-            this.radSciccors.CheckedChanged += new System.EventHandler(this.radSciccors_CheckedChanged);
+            
             // 
             // radRock
             // 
@@ -102,6 +70,39 @@
             this.radRock.UseVisualStyleBackColor = true;
             this.radRock.CheckedChanged += new System.EventHandler(this.radRock_CheckedChanged);
             // 
+            // radSciccors
+            // 
+            this.radSciccors.AutoSize = true;
+            this.radSciccors.Location = new System.Drawing.Point(6, 114);
+            this.radSciccors.Name = "radSciccors";
+            this.radSciccors.Size = new System.Drawing.Size(66, 17);
+            this.radSciccors.TabIndex = 1;
+            this.radSciccors.TabStop = true;
+            this.radSciccors.Text = "Sciccors";
+            this.radSciccors.UseVisualStyleBackColor = true;
+            this.radSciccors.CheckedChanged += new System.EventHandler(this.radSciccors_CheckedChanged);
+            // 
+            // radPaper
+            // 
+            this.radPaper.AutoSize = true;
+            this.radPaper.Location = new System.Drawing.Point(6, 69);
+            this.radPaper.Name = "radPaper";
+            this.radPaper.Size = new System.Drawing.Size(53, 17);
+            this.radPaper.TabIndex = 0;
+            this.radPaper.TabStop = true;
+            this.radPaper.Text = "Paper";
+            this.radPaper.UseVisualStyleBackColor = true;
+            this.radPaper.CheckedChanged += new System.EventHandler(this.radPaper_CheckedChanged);
+            // 
+            // lblInstructions
+            // 
+            this.lblInstructions.AutoSize = true;
+            this.lblInstructions.Location = new System.Drawing.Point(12, 9);
+            this.lblInstructions.Name = "lblInstructions";
+            this.lblInstructions.Size = new System.Drawing.Size(126, 13);
+            this.lblInstructions.TabIndex = 1;
+            this.lblInstructions.Text = "Please Make A Selection";
+            // 
             // lblChoice
             // 
             this.lblChoice.AutoSize = true;
@@ -113,6 +114,7 @@
             // 
             // imgPlayer
             // 
+            this.imgPlayer.Image = global::PART_6___PSR_PROJECT.Properties.Resources.question;
             this.imgPlayer.Location = new System.Drawing.Point(109, 75);
             this.imgPlayer.Name = "imgPlayer";
             this.imgPlayer.Size = new System.Drawing.Size(144, 128);
@@ -150,6 +152,7 @@
             // 
             // imgPC
             // 
+            this.imgPC.Image = global::PART_6___PSR_PROJECT.Properties.Resources.question;
             this.imgPC.Location = new System.Drawing.Point(286, 75);
             this.imgPC.Name = "imgPC";
             this.imgPC.Size = new System.Drawing.Size(144, 128);
@@ -157,11 +160,22 @@
             this.imgPC.TabIndex = 7;
             this.imgPC.TabStop = false;
             // 
+            // btnPlayAgain
+            // 
+            this.btnPlayAgain.Location = new System.Drawing.Point(10, 209);
+            this.btnPlayAgain.Name = "btnPlayAgain";
+            this.btnPlayAgain.Size = new System.Drawing.Size(93, 66);
+            this.btnPlayAgain.TabIndex = 8;
+            this.btnPlayAgain.Text = "Play Again?";
+            this.btnPlayAgain.UseVisualStyleBackColor = true;
+            this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
+            // 
             // frmRPS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 279);
+            this.Controls.Add(this.btnPlayAgain);
             this.Controls.Add(this.imgPC);
             this.Controls.Add(this.lblPCChoice);
             this.Controls.Add(this.lblVS);
@@ -194,6 +208,7 @@
         private System.Windows.Forms.Label lblVS;
         private System.Windows.Forms.Label lblPCChoice;
         private System.Windows.Forms.PictureBox imgPC;
+        private System.Windows.Forms.Button btnPlayAgain;
     }
 }
 
